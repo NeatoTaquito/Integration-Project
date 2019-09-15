@@ -1,0 +1,10 @@
+answer = input("Welcome, Player. Before you lies a divide, which splits into two openings for two possible paths. Do you go left, or right?")
+if answer == "left":
+    
+    answer = input("You decide to go left. After a few miles of joyful galavanting you spy an oddly placed outhouse with what seems to be littered with notes, lymrics, and other musical notations. Do you investigate or continue?")
+    if answer == "continue":
+        answer = input(" You decide to go past the foul smelling notes and continue about your day. From then on you feel as if that if you were too curious for your own good, some more...interesting things may occur. As you walk you spy a perculiar castle acting as a landmark for the region. It bears a flag you do not recognize with a strange symbol that means nothing to you. You hear a screech, from atop the tower (below the flag, an opening is clearly visible) you see two figures struggling with one another. One seems to have the upperhand as they push the other's half outside the opening." /n" As if by chance, nearby you happens to be a crossbow with a long range sniper scope. Do you take it and help, or ignore it and leave?")
+    if answer == "investigate":
+        answer = input(" You decide to investigate. As you reach for the outhouse handle, the door flys open and out pops the notorious Scat Goblin. To your surprise he is actually scatting along to some mysterious melody within his head as he raises his club in the air, bringing it down swiftly upon your noggin. You die.")
+    elif answer == "right":
+        answer = input("You trust your gut and diverge onto the path to the right.""You walk for what seems to be forever; your stomach feeling as if it grew emptier and more loud with each step. Perhaps out of the fog this hunger envelopes around your mind, your nose picks out to smell of pastries.Do you try to follow this scent or forage for food?")
