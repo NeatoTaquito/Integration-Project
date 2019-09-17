@@ -23,8 +23,3 @@ if arithmetic == "4":
     print( value1 + value2 + ":" + "You're right!! Look at you meeting minimum requirements")
 else:
     print("Really? Hoo boy, I think you should try again.")
-
-value1 = 2
-value2 = 2
-you = "You "
-lose = "lose!"
