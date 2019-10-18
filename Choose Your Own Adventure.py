@@ -5,8 +5,9 @@
 # I am about to add a timer to polish up how quickly the text comes after getting user input.
 from time import sleep
 #I'm adding a definition to my function below so that I may be able to use "Recursion" to bring any deaths or game overs to the beginning of the while loop.
-def chooseYourOwnAdventure():
-    answer = True
+answer = True
+# another while loop to create the
+while answer == True:
     while answer == True:
         name = input("What is your name, stranger?")
         sleep(1)
@@ -27,13 +28,13 @@ def chooseYourOwnAdventure():
                 sleep(1)
                 if answer == "1":
                     sleep(1)
-                    print("You place it around your neck, you instantly transform into a fern; similar to the one you had just picked this up from.")
+                    print("You place it around your neck, you instantly transform into a fern; similar to the one you had just picked the necklace up from.")
                     sleep(1)
-                    answer=input("Sorry," + " " + name + ". Better luck next time. \n(1)Wanna try again?\n(2)Accept your fate?")
-                    if answer == "2":
-                       print("Thanks for playing," + name + "!") 
-                    elif answer == "1":
-                        break
+                    print("Seems your curiousity has led you done a green state you werent quite expecting!")
+                    print("Sorry," + " " + name + ". Better luck next time.")
+                    sleep(3)
+                    answer = False
+                    sleep(2)
 
 # I've begun to add more print statements to my lines of code leading up to the input to not only increase the novelization of the story, but to also ensure that we keep the lines relatively small.                    
                 if answer == "2":
@@ -73,11 +74,31 @@ def chooseYourOwnAdventure():
                                 sleep(1)
                                 print("Almost as soon as the Voice stops, a tattered figure you failed to see brings itself into the light.")
                                 print("It's a woman drenched in sweat and mud, her hands chained to the wall. As she slunched forward you hear her cry out to you.")
-                                sleep(1)
-                                print("'Please..that necklace....that's mine.' she croaks.\n Her voice sounded just like the one in your head.")
+                                sleep(2)
+                                print("'Please..that necklace....place it on my neck..save me!' she croaks.\n Her voice sounding more strained with each breath.")
+                                print("'That statue, it lured me here too..cursed my to start turning into some bush..' Showing her leg, starting to break off into vines.")
+                                print("After struggling to push herself back into the light, she croaks once more, 'Don't trust the Voice, help me....")
+                                sleep(3)
+                                print("Not knowing what to make of the situation, you have become tasked with an almost decision with two lives hanging on the outcome.")
+                                print("What do you do?")
+                                sleep(2)
                                 answer = input("Do you:(1)listen to the Voice in your head and place the necklace into the hands of the statue?\n(2)or place it around the neck of this somehow familiar woman?")
                                 if answer == "1":
-                                    print()
+                                    print("You trust the Voice as you have been and place the necklace into the statues cupped hands.")
+                                    sleep(1)
+                                    print("'No!...Dont-', before the lady could finish, the sound of howling wind and rushing leaves screams around the statue.")
+                                    print("The statue then violently cracks off chunks of its stone prison fall from itself like hail.")
+                                    sleep(2)
+                                    print("The sound grew to a deafening level as the figure underneath the statue laid itself bare. Branches and vines shoot from the openings.")
+                                    print("Some strike your arms and leg, almost instantly turning them to stone.'Fool', the wind seems to howl out; your vision fading with each strike.")
+                                    sleep(2)
+                                    print("You eventually succumb, unable to see nor feel. Only branching out with thoughts(no pun intended) as you become afixed in a dynamic pose.")
+                                    sleep(3)
+                                    print("Man, what a way to go. But hey, maybe you can call out to someone to help you out. Maybe they are just...walking about?")
+                                    print("Better luck next time," + name + "!")
+                                    sleep(2)
+                                    answer = False
+                                    sleep(2)
                                 elif answer == "2":
                                     print()
 
@@ -86,19 +107,36 @@ def chooseYourOwnAdventure():
                                 sleep(1)
                                 print("Three hooded figures with foliage wrapped around themselves stand before you. The middle one raises its hand out to your bag.")
                                 print("You medallion tremors with the force of an earthquake and rips through your bag, into the hand of the hooded figure.")
-                                sleep(1)
-                                print("The figure, now grasping the medallion, starts to make a rustling sound similar to falling leaves from rushing wind.")
+                                sleep(2)
+                                print("The figure, now grasping the necklace, starts to make a rustling sound similar to falling leaves from rushing wind.")
                                 print("The sound grows increasingly louder as each moment passes, and your vision starts to fade almost as quickly.")
-                                sleep(1)
-                                print("You've been turned into a statue, in the bottom of some unknown place. The only thing you can do is think.")
+                                sleep(2)
+                                print("You've been turned into a statue, in the bottom of some unknown place. The only thing you can do is think to yourself.")
                                 print("Sorry," + name + " seems you've met a standstill. Better luck next time.")
-                                break
+                                sleep(3)
+                                answer = False
+                                sleep(3)
     
                             
             elif answer == "2":
                 print("You ignore the necklace and continue your walk.\nAs you walk the air becomes more arid and hotter in temperature.")
                 sleep(1)
+                print("It keeps climbing in temperature until you gain the sense to turn around.")
+                print("But when you do, the trail you've known is just sand, same as what is around you as well.")
+                sleep(2)
+                print("Seems you've run into the old ' Walk until sand ' gag; but without a good punch line.")
+                print("You eventually succumb to your thirst.")
+                sleep(2)
+                print("Yikes! That was actually pretty weird. I wonder why the developer even made this an option if you were doomed to start.")
+                sleep(1)
+                print(name + ", you are one tenacious tenant of this game. I emplore you to try again!")
+                sleep(1)
+                answer = False
+                sleep(2)
 
         elif answer=="1":
             input()
-chooseYourOwnAdventure()
+    else:
+        print("You need to choose either (1) or (2). Please try again!")
+print("Thanks for playing!")
+sleep(1)
