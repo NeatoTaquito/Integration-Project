@@ -1,12 +1,12 @@
 #Daniel Claus Romeo
 #Choose Your Own Adventure
-#Last Edited: 10/14/19
+#Last Edited: 10/18/19
 
 # I am about to add a timer to polish up how quickly the text comes after getting user input.
 from time import sleep
 #I'm adding a definition to my function below so that I may be able to use "Recursion" to bring any deaths or game overs to the beginning of the while loop.
 answer = True
-# another while loop to create the
+# another while loop to break out when a wrong input is added or the game ends in a good or bad way.
 while answer == True:
     while answer == True:
         name = input("What is your name, stranger?")
@@ -100,7 +100,52 @@ while answer == True:
                                     answer = False
                                     sleep(2)
                                 elif answer == "2":
-                                    print()
+                                    print("The Voice bellows while you place the necklace onto the neck of this stranger.")
+                                    sleep(1)
+                                    print("'NO! DO NOT BELIEVE HER SHE-'the Voice abruptly ends as it begins to almost splinter piece by piece from your decision.")
+                                    print("With each broken piece from the statue, the woman seemed to grow in health and stature.")
+                                    sleep(1)
+                                    print("Evenutally all that remains of the Voice is silence and rubble; the woman now able to stand on her own. She asks:")
+                                    sleep(1)
+                                    print("'You have made the right choice, these evil beings tried to take everything from me; including my voice.'")
+                                    sleep(1)
+                                    answer = input("'Please, release me so I may stop these things before more are taken.\nDo you:\n(1)free her of her bonds?\n(2)Or leave her chained?")
+                                    sleep(2)
+                                    if answer == "1":
+                                        print("You free her, the chains scattering to the ground as this overcoming sense of relief fills your mind.")
+                                        sleep(1)
+                                        print("She places a hand on your shoulder and places what seems to be a dagger into your bag.")
+                                        print("'Thank you," + name + ". You've saved more than you can imagine.'")
+                                        sleep(2)
+                                        print("'Use that dagger to protect yourself if you need to; i'll rid this world of those Things.'")
+                                        print("With that, she stormed out the basement and into the house; bright light shone through the floor boards unto you.")
+                                        print("Eventually she comes back and gives the all clear, waving farewell as she disappears from view")
+                                        sleep(3)
+                                        print("Well, if that wasn't the weirdest thing to happen to you all day, but you succeeded!")
+                                        print("Congratulations! You've completed obtained the first ending!")
+                                        sleep(2)
+                                        print("I implore you to try again and see what other adventures await! Or maybe, even play a dice game?")
+                                        print("Either way, you did it!")
+                                        sleep(2)
+                                        answer = False
+                                    elif answer == "2":
+                                        print("'What? You must hurry, those Things heard their idol fall, they will be here any moment! Untie me!' As she screamed for help, the ceiling begins to crumble.")
+                                        sleep(1)
+                                        print("From three holes that were formed by the quakes seemed to drop three hooded figures; landing with weight comparable to beasts.")
+                                        print("Out of the three, their middle hood rose the tallest and outstretched its 'hand'. It appearing to be a finger made of vines and fibers.")
+                                        sleep(2)
+                                        print("It pointed to the woman, her necklace, and the sound of howling wind and falling flora began to fill the air. The woman cried out;")
+                                        print("'It's them! You idiot, they after this necklace! You've doomed us all!'Her face was pained, the necklace seeming to string outwards.")
+                                        sleep(2)
+                                        print("The necklace was struggling to go to the grasp of the middle figure, the howling growing louder by the second.")
+                                        print("The medallion snaps off from the necklace and flies into the hands of the hooded Thing; the woman falling back down, immobile.")
+                                        sleep(2)
+                                        print("By now you see your limbs grow heavy and vision blurry. The figure now pointing to you; you turn to stone.")
+                                        sleep(1)
+                                        print("You chose an intersting end, didn't think you would come all this way just to turn around. Oh well!")
+                                        print("Maybe next time you can find another way!")
+                                        sleep(1)
+                                        answer = False
 
                             elif answer == "2":
                                 print("Almost as quickly as the doors swing open, you book it to the front door; crashing into it and nearly sending the door off the hinges.")
@@ -133,10 +178,22 @@ while answer == True:
                 sleep(1)
                 answer = False
                 sleep(2)
-
+#As I was focusing on the right-side path for the first half of this project, I plan on adding an additional and new story for heading left side. It will indeed be finished by the end of the project
         elif answer=="1":
             input()
     else:
         print("You need to choose either (1) or (2). Please try again!")
 print("Thanks for playing!")
 sleep(1)
+#adding recursion so that I may have another way to add to this program after it is done with my first game I may have another to go with for the hell of it.
+#The python interpreter is broken on my Pycharm for now so I am adding my additional file underneath the rest so it can be played through IDLE.
+#I've also plans to make the generic dice roll game more fun with random snippits if it is a certain number, for fun.
+def diceRoll():
+    from random import randint
+    repeat = True
+    while repeat:
+        print("You rolled",randint(1,6))
+        print("Do you want to roll again?")
+        repeat = ("y" or "yes") in input().lower().strip()
+diceRoll()
+
