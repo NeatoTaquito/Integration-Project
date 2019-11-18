@@ -1,6 +1,7 @@
 #Daniel Claus Romeo
 #Choose Your Own Adventure
-#Last Edited: 10/18/19
+#Last Edited: 11/18/19
+
 
 # I am about to add a timer to polish up how quickly the text comes after getting user input.
 from time import sleep
@@ -178,22 +179,75 @@ while answer == True:
                 sleep(1)
                 answer = False
                 sleep(2)
-#As I was focusing on the right-side path for the first half of this project, I plan on adding an additional and new story for heading left side. It will indeed be finished by the end of the project
+#As I was focusing on the right-side path for the first half of this project, I plan on adding an additional and new story for heading left side. It will indeed be finished by the end of the project(10/20/19)
+#I have now finished the left portion of the choose your own adventure novel/game (11/17/19) so now the final portion of the project can commence.
+#This portion will have FAR MORE things happening; including even more stories.
         elif answer=="1":
-            input()
-    else:
-        print("You need to choose either (1) or (2). Please try again!")
+            print("... you have just begun to feel you're walking into eternity when you see a T-junction. But just then you hear a ROAR!!!")
+            sleep(1)
+            input("You turn back to see a giant lion, miles away, running after you at great speed. You just have time to react. \nDo you:\n(1)dodge left?\n(2)or dodge right?")
+            sleep(2)
+            if answer == "1":
+                print("Unfortunately for you, the lion catches up and rips you to shreds. You feel intense pain, yet you can't die. This is hell.")
+                sleep(1)
+                print("Better luck next time,"+ name + "!")
+                answer = False
+            elif answer == "2":
+                 input("You find a portal to another dimension. Could this be a trap? Or should you take that chance?\nDo you:\n(1)Take said chance.\n(2)or do you continue on?")
+                 sleep(1)
+                 if answer == "1":
+                     print("You have been walking for miles... and this is geting frustrating. Will this road ever end?")
+                     sleep(1)
+                     input("A dagger falls from the skies above.\nDo you:\n(1)allow it to strike you?\n(2)or do you dodge?")
+                     if answer == "1":
+                         print("You open your arms comically and allow this blade to make its impact; strangely it only embeds itself into your knee.")
+                         sleep(2)
+                         print("The searing pain that this knee sent throughout your body also strangely brings about a thought that you are done with adventuring.")
+                         print("It seems to have also been laced with a toxin; as your eyes fog and your vision fades.")
+                         sleep(2)
+                         print("Seems like you are done," + name +". Man, you know I used to be an adventurer just like you.")
+                         answer = False
+                    elif answer == "2":
+                        print("Leaping left, you dodge the strange looking knife. A few more come your way, allowing yourself even more dodges.")
+                        sleep(1)
+                        print("As the last knife sticks into the ground, you catch a glimpse of the assassin. It's...Cthulu?!")
+                        sleep(1)
+                        print("The tentacled assassin meets before you in all his Lovecraftian glory.")
+                        sleep(1)
+                        print("He speaks in 'blrrbss' and hisses, holding out his armed tentacle as if preparing for your retaliation.")
+                        sleep(1)
+                        print("What do you do? Do you:\n (1) grab a nearby knife and lunge at the God?\n(2) or do you become the next sacrfice for this deity?")
+                        if answer == "1":
+                            print("You go forth, knife in hand, thrusting it into the beard-like cluster of worm-like appendiges.")
+                            sleep(1)
+                            print("With a gurgle and a spit of ink, your knife finds its new home within the breast of this beast.")
+                            sleep(1)
+                            print("A geyser of ink hits your face, sending you in a fit trying to clear your vision.")
+                            sleep(1)
+                            print("Once you scrape away the effleuence of this fearsome foe, you find yourself back at the beginning of the crossroads again.")
+                            sleep(2)
+                            answer = False
+                        elif answer == "2":
+                            
+        else:
+            print("You need to choose either (1) or (2). Please try again!")
 print("Thanks for playing!")
 sleep(1)
 #adding recursion so that I may have another way to add to this program after it is done with my first game I may have another to go with for the hell of it.
 #The python interpreter is broken on my Pycharm for now so I am adding my additional file underneath the rest so it can be played through IDLE.
 #I've also plans to make the generic dice roll game more fun with random snippits if it is a certain number, for fun.
 def diceRoll():
-    from random import randint
-    repeat = True
-    while repeat:
-        print("You rolled",randint(1,6))
-        print("Do you want to roll again?")
-        repeat = ("y" or "yes") in input().lower().strip()
+    input("Would you like to play a dice game? Maybe you'll have better luck!")
+    if "yes":
+        from random import randint
+        repeat = True
+        while repeat:
+            print("You rolled",randint(1,6))
+            print("Do you want to roll again?")
+            repeat = ("y" or "yes") in input().lower().strip()
+    else:
+        print("Well, fine! I didn't want to play with you anyway!!!")
+        break
+
 diceRoll()
 
