@@ -5,7 +5,6 @@
 
 # I am about to add a timer to polish up how quickly the text comes after getting user input.
 from time import sleep
-#I'm adding a definition to my function below so that I may be able to use "Recursion" to bring any deaths or game overs to the beginning of the while loop.
 answer = True
 # another while loop to break out when a wrong input is added or the game ends in a good or bad way.
 while answer == True:
